@@ -26,6 +26,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: white;
     }
 
     .claim {
