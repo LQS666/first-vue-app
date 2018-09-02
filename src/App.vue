@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <HeroImage />
     <Claim />
     <SearchInput />
   </div>
@@ -11,6 +12,7 @@ import axios from 'axios';
 import debounce from 'lodash.debounce';
 import Claim from '@/components/Claim.vue';
 import SearchInput from '@/components/SearchInput.vue';
+import HeroImage from '@/components/HeroImage.vue';
 
 const API = 'https://images-api.nasa.gov/search';
 
@@ -19,6 +21,7 @@ export default {
   components: {
     Claim,
     SearchInput,
+    HeroImage,
   },
   data() {
     return {
@@ -53,17 +56,13 @@ export default {
   }
 
   .wrapper {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
     margin: 0;
     padding: 30px;
     justify-content: center;
-    background-image: url('assets/heroimage.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 80% 0%;
   }
 </style>
