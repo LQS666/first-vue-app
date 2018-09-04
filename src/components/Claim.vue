@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Claim.vue',
+  name: 'Claim',
 };
 </script>
 
