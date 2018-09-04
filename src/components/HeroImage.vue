@@ -22,4 +22,15 @@ export default {
         background-size: cover;
         background-position: 80% 0%;
     }
+
+    .heroImage::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        content: '';
+        background: rgba(0,0,0, .2);
+    }
 </style>
